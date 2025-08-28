@@ -1,0 +1,148 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e90ff, #2ecc71);
+  color: white;
+}
+
+/* Navbar */
+.menu-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  background: rgba(0,0,0,0.6);
+  padding: 8px 12px;
+  border-radius: 6px;
+  z-index: 1001;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: -220px;
+  width: 200px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  padding-top: 50px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 25px 0;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  background: yellow;
+  color: black;
+  border-radius: 6px;
+}
+nav.active {
+  left: 0;
+}
+
+/* Profile */
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.profile-pic img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+/* Section Boxes */
+section {
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgba(0,0,0,0.5);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+h2 {
+  border-bottom: 2px solid yellow;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Skills & Projects */
+.skills-list, .projects-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.skills-list span, .projects-list a {
+  background: rgba(255,255,255,0.2);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.projects-list a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input, textarea, button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+button {
+  background: yellow;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background: orange;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  margin-top: 40px;
+}
+
+/* Popup */
+#popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+#popup div {
+  background: white;
+  color: black;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+}

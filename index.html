@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harish Kumar - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu Button -->
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <!-- Sidebar Menu -->
+  <nav id="sidebar">
+    <ul>
+      <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+      <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+      <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile -->
+  <section id="profile">
+    <div class="profile-pic">
+      <img src="https://via.placeholder.com/160" alt="Profile Photo">
+    </div>
+    <h2>Harish Kumar</h2>
+    <p>Future Ethical Hacker | B.Sc Computer Science</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am Harish Kumar, an aspiring Ethical Hacker passionate about cybersecurity, ethical hacking, and protecting digital systems.</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p>B.Sc Computer Science - University of Madras</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>Python</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>SQL</span>
+      <span>Ethical Hacking</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-list">
+      <a href="#">🔗 Project 1 Source Code</a>
+      <a href="#">🔗 Project 2 Source Code</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Query" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>® 2025 Harish Kumar</p>
+  </footer>
+
+  <!-- Popup -->
+  <div id="popup">
+    <div>
+      <p>✨ Magic Message Sent Successfully! ✨</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
